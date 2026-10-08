@@ -9,7 +9,7 @@ protected:
   std::string location;
 
 public:
-  Sensor(int sensorID, std::string sensorLocation) {}
+  Sensor(int sensorID, std::string sensorLocation);
 
   void update();
   void printCurrentCondition();

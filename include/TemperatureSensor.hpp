@@ -4,9 +4,9 @@
 
 class TemperatureSensor : public Sensor {
 private:
-  int temperature;
+  double temperature;
 public:
-  TemperatureSensor(int sensorId, std::string sensorLocation, int temperature);
+  TemperatureSensor(int sensorId, std::string sensorLocation, double temperature);
   void update();
   void printCurrentCondition();
 };

@@ -2,17 +2,6 @@
 #include <string>
 #include "Sensor.hpp"
 
-class Sensor
-{
-protected:
-  int id;
-  std::string location;
-
-public:
-  Sensor(int sensorID, std::string sensorLocation) : id(sensorID), location(sensorLocation)
-  {
-  }
-
-  void update() {}
-  void printCurrentCondition() {}
-};
+Sensor::Sensor(int sensorID, std::string sensorLocation) : id(sensorID), location(sensorLocation) {}
+void Sensor::update() {}
+void Sensor::printCurrentCondition() {}

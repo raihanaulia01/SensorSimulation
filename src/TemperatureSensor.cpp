@@ -1,17 +1,14 @@
 #include <iostream>
 #include <string>
-#include "Sensor.hpp"
+#include <cstdlib>
+#include "TemperatureSensor.hpp"
 
-class TemperatureSensor : public Sensor
-{
-private:
-  int temperature;
 
-public:
-  TemperatureSensor(int sensorID, std::string sensorLocation, int temperature) : Sensor(sensorID, sensorLocation), temperature(temperature)
-  {
-  }
+TemperatureSensor::TemperatureSensor(int sensorID, std::string sensorLocation, double temperature) : Sensor(sensorID, sensorLocation), temperature(temperature){}
 
-  void update() {}
-  void printCurrentCondition() {}
-};
+void TemperatureSensor::update() {
+  temperature += (rand() % 20 - 10) / 10.0;
+}
+void TemperatureSensor::printCurrentCondition() {
+  std::cout << id << " | " << location << " | Temperature: " << temperature << "C" << std::endl;
+}

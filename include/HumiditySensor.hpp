@@ -4,9 +4,9 @@
 
 class HumiditySensor : public Sensor {
 private:
-  int humidity;
+  double humidity;
 public:
-  HumiditySensor(int sensorId, std::string sensorLocation);
+  HumiditySensor(int sensorId, std::string sensorLocation, double humidity);
   void update();
   void printCurrentCondition();
 };
