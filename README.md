@@ -13,9 +13,6 @@ Each of these inherited sensors stores their own data, updates the value over ti
 ## What's this project for?
 This project is made purely for me to learn C++ OOP fundamentals and build using CMake.
 
-## OOP Concepts
-
-
 ## Project Structure
 ```txt
 SensorSimulation
