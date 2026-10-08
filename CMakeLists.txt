@@ -1,4 +1,4 @@
-cmake_minimum_required(3.15) # karena pake filesystems
+cmake_minimum_required(VERSION 3.15)
 project(sensor-simulation)
 include_directories(include)
 
