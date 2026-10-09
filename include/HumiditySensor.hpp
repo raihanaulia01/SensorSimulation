@@ -7,8 +7,8 @@ private:
   double humidity;
 public:
   HumiditySensor(int sensorId, std::string sensorLocation, double humidity);
-  void update();
-  void printCurrentCondition();
+  void update() override;
+  void printCurrentCondition() override;
 };
 
 

@@ -11,8 +11,8 @@ protected:
 public:
   Sensor(int sensorID, std::string sensorLocation);
 
-  void update();
-  void printCurrentCondition();
+  virtual void update();
+  virtual void printCurrentCondition();
 };
 
 #endif

@@ -7,8 +7,8 @@ private:
   double temperature;
 public:
   TemperatureSensor(int sensorId, std::string sensorLocation, double temperature);
-  void update();
-  void printCurrentCondition();
+  void update() override;
+  void printCurrentCondition() override;
 };
 
 
