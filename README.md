@@ -1,8 +1,8 @@
 # Smart Hub Sensor Simulation
-This is a simple C++ project made to practice OOP Concepts in a smart home simulation.
+This is a simple C++ project made to practice OOP Concepts in a smart home simulation and to fullfil an internship assignment at Abinara-1 Research Team.
 
 ## Overview
-This project 'simulates' a smart home system with a base 'Sensor' class and three inherited types:
+This project 'simulates' a smart home system with a base 'Sensor' class and three inherited sensor types:
 - Temperature
 - Humidity
 - Air Quality
