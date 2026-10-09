@@ -10,6 +10,7 @@ protected:
 
 public:
   Sensor(int sensorID, std::string sensorLocation);
+  virtual ~Sensor() = default;
 
   virtual void update();
   virtual void printCurrentCondition();
